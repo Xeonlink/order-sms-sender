@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 50 50">
+  <defs>
+    <clipPath id="clip-plus">
+      <rect width="50" height="50"/>
+    </clipPath>
+  </defs>
+  <g id="plus" clip-path="url(#clip-plus)">
+    <rect id="사각형_1" data-name="사각형 1" width="50" height="8" rx="4" transform="translate(0 21)" fill="#fff"/>
+    <rect id="사각형_2" data-name="사각형 2" width="8" height="50" rx="4" transform="translate(21)" fill="#fff"/>
+  </g>
+</svg>

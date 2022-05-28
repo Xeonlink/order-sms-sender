@@ -1,38 +1,52 @@
+/* #region - App */
 .App {
+  --bg-clr-darkest: hsla(120, 15%, 70%, 1);
+  --bg-clr-darker: hsla(120, 15%, 80%, 1);
+  --bg-clr-dark: hsla(120, 15%, 90%, 1);
+  --bg-clr: hsla(120, 15%, 95%, 1);
+  --bg-clr-light: green;
+  --bg-clr-lighter: green;
+  --bg-clr-lightest: green;
+
+  --primary-clr: green;
+  --primary-clr-light: rgb(0, 185, 0);
+  --primary-clr-lighter: rgb(0, 212, 0);
+  --primary-clr-liehgtest: rgb(0, 243, 0);
+
+  --secondary-clr: rgb(146, 219, 146);
+
+  --trans-dur-shortest: 0.1s;
+  --trans-dur-shorter: 0.2s;
+  --trans-dur-short: 0.3s;
+  --trans-dur-long: 0.5s;
+  --trans-dur-longer: 0.6s;
+  --trans-dur-longest: 0.7s;
+
+  --shadow-clr: hsla(0, 0%, 80%, 1);
+  --shadow-clr-light: hsla(0, 0%, 90%, 1);
+  --shadow-clr-lightest: hsla(0, 0%, 95%, 1);
+
+  --shadow-blur: 5px;
+  --shadow-blur-long: 10px;
+
+  --border-rad: 5px;
+  --border-rad-rounder: 10px;
+  --border-rad-roundest: 15px;
+
+  --text-size: 1rem;
+  --text-size-small: 0.9rem;
+  --text-size-smaller: 0.85rem;
+  --text-size-smallest: 0.8rem;
+
+  --even-gap: 5px;
+
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App * {
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App .flex {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* #endregion */
