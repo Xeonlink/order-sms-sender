@@ -1,20 +1,20 @@
-import React, { useState } from "react";
-import {
-  Page,
-  TunedSlider,
-  ContentBox,
-  NavButton,
-  ButtonGroup,
-} from "component/Styled";
-import usePage from "Hooks/usePage";
-import AccepterPage from "page/AccepterPage";
-import { toast } from "react-toastify";
-import IMG_DISCOUNT from "img/discount.svg";
 import { toKRW, toNum } from "Extra/Utils";
 import GLOBAL_VAR from "Extra/globalVar";
-import ConfirmPage from "page/ConfirmPage";
-import styled from "styled-components";
+import usePage from "Hooks/usePage";
 import Counter from "component/Counter";
+import {
+  ButtonGroup,
+  ContentBox,
+  NavButton,
+  Page,
+  TunedSlider,
+} from "component/Styled";
+import IMG_DISCOUNT from "img/discount.svg";
+import AccepterPage from "page/AccepterPage";
+import ConfirmPage from "page/ConfirmPage";
+import { useState } from "react";
+import { toast } from "react-toastify";
+import styled from "styled-components";
 
 const ProductCard = styled.article`
   position: relative;

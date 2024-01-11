@@ -1,7 +1,6 @@
-import { ButtonGroup, ContentBox, NavButton, Page, H1 } from "component/Styled";
 import GLOBAL_VAR, { resetGLOBAL_VAR } from "Extra/globalVar";
 import usePage from "Hooks/usePage";
-import React from "react";
+import { ButtonGroup, ContentBox, H1, NavButton, Page } from "component/Styled";
 import Home from "./Home";
 
 export default function CompletePage() {

@@ -22,8 +22,6 @@ export default function useForm(defaultValues, submitCallback) {
       // key : arg1 // value : arg2
       return setData({ ...data, [arg1]: arg2 });
     }
-
-    console.log("useForm - handleChange : invalid arguments");
   };
 
   const handleSubmit = (e) => {

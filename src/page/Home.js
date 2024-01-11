@@ -1,11 +1,10 @@
-import React from "react";
-import { Page, TunedNavButton, TunedSlider } from "component/Styled";
 import usePage from "Hooks/usePage";
-import SenderPage from "./SenderPage";
+import { Page, TunedNavButton, TunedSlider } from "component/Styled";
 import IMG_HOME1 from "img/home1.jpg";
 import IMG_HOME2 from "img/home2.jpg";
 import IMG_HOME3 from "img/home3.jpg";
 import styled from "styled-components";
+import SenderPage from "./SenderPage";
 
 const Img = styled.img`
   max-width: 90vw;

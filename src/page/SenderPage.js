@@ -1,21 +1,20 @@
-import React from "react";
-import useForm from "Hooks/useForm";
 import { setTelHyphen } from "Extra/Utils";
+import GLOBAL_VAR from "Extra/globalVar";
+import useForm from "Hooks/useForm";
+import usePage from "Hooks/usePage";
 import {
   ButtonGroup,
   ContentBox,
+  FnButton,
+  H1,
   Input,
   InputGroup,
   NavButton,
   Page,
-  H1,
-  FnButton,
 } from "component/Styled";
-import usePage from "Hooks/usePage";
-import AccepterPage from "./AccepterPage";
-import GLOBAL_VAR from "Extra/globalVar";
 import Home from "page/Home";
 import { toast } from "react-toastify";
+import AccepterPage from "./AccepterPage";
 
 export default function SenderPage() {
   const { setPage } = usePage();

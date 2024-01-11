@@ -1,70 +1,19 @@
-# Getting Started with Create React App
+## 프로젝트를 시작한 이유
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+해당 프로젝트는 react-router-dom이 필요없을 정도로 간단한 프로젝트를 진행할 경우에는 어떠한 방식으로 page들간의 routing을 구현해야하는가에 대해 고민하기 시작하면서 시작되었습니다.
 
-## Available Scripts
+매번 프로젝트를 진행할 때마다 모든 설정을 다시하고 npm에서 다량의 패키지를 설치하는 것이 지겨워서 어떻게 하면 하나라도 줄일 수 있을지에 대해서 고민하였습니다.
 
-In the project directory, you can run:
+## 프로젝트 개요
 
-### `npm start`
+해당 프로젝트는 웹사이트 형식의 키오스크로서 직거래를 진행할 때, 수기로 작성하던 송장작성을 웹사이트 형식의 키오스크를 사용한다면 고객이나 손님의 글씨를 알아보지 못하여 배송에 문제가 생기는 것을 방지할 수 있을 것이라고 생각하였습니다.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 프로젝트를 통해 얻은 것
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+구현을 하면서 리엑트의 많은 기능을 배울 수 있었습니다. 특히 리엑트의 context api를 사용하는 방법도 배울 수 있었고, 커스텀훅을 만들어보면서 js를 더욱 공부하면 더 많은 것을 해볼 수 있을 것이라는 자신감도 생겼습니다.
 
-### `npm test`
+대단하지는 않지만 AWS에 대해서도 공부하고, 여러가지 클라우드 서비스에 대해 공부하며 SMS를 전송하는 백엔드를 구축했다는 점도 더욱 자신감을 가질 수 있도록 하는 원동력이 되었습니다.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 프로젝트가 중단된 이유
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+SMS를 보내기 위하여 백엔드로 AWS의 API Gateway와 Lambda서비스를 사용하여 클라이언트에서 요청을 받고, SMS를 보내기 위해서 AWS가 아닌 네이버 클라우드를 사용하고 있었습니다. 그런데 중간에 모종의 이유로 AWS쪽 CDN프로젝트가 증발하는 바람에 프론트엔드 쪽이었던 이 프로젝트도 중단되었습니다.

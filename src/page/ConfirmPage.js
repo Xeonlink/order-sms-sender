@@ -1,18 +1,14 @@
-import { ButtonGroup, NavButton, Page } from "component/Styled";
-import Home from "./Home";
-import { toast } from "react-toastify";
-import { useState } from "react";
-import React from "react";
-import usePage from "Hooks/usePage";
-import ProductPage from "./ProductPage";
-import GLOVAL_VAR, { resetGLOBAL_VAR } from "Extra/globalVar";
 import { toKRW } from "Extra/Utils";
-import { ContentBox } from "component/Styled";
-import styled from "styled-components";
-import GLOBAL_VAR from "Extra/globalVar";
-import LoadingBox from "component/LoadingBox";
+import { default as GLOBAL_VAR, default as GLOVAL_VAR } from "Extra/globalVar";
+import usePage from "Hooks/usePage";
 import axios from "axios";
+import LoadingBox from "component/LoadingBox";
+import { ButtonGroup, ContentBox, NavButton, Page } from "component/Styled";
+import { useState } from "react";
+import { toast } from "react-toastify";
+import styled from "styled-components";
 import CompletePage from "./CompletePage";
+import ProductPage from "./ProductPage";
 
 const InfoGroup = styled.article`
   width: 90%;
@@ -58,7 +54,7 @@ export default function ConfirmPage() {
 
   const onComplete = () => {
     setIsLoading(true);
-    // setPage(<CompletePage />);
+
     axios
       .post(SMS_SENDER_ENDPOINT, { smsContent: makeSMSContent() })
       .then((result) => {

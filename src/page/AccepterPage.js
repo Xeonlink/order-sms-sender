@@ -1,22 +1,21 @@
-import useForm from "Hooks/useForm";
-import React from "react";
 import { makeRoadAddrMoreShort, setTelHyphen } from "Extra/Utils";
-import ProductPage from "page/ProductPage";
-import usePage from "Hooks/usePage";
-import AddrSearchPage from "./AddrSearchPage";
 import GLOBAL_VAR from "Extra/globalVar";
+import useForm from "Hooks/useForm";
+import usePage from "Hooks/usePage";
+import {
+  ButtonGroup,
+  ContentBox,
+  FnButton,
+  H1,
+  Input,
+  InputGroup,
+  NavButton,
+  Page,
+} from "component/Styled";
+import ProductPage from "page/ProductPage";
 import SenderPage from "page/SenderPage";
 import { toast } from "react-toastify";
-import {
-  Page,
-  ContentBox,
-  ButtonGroup,
-  NavButton,
-  InputGroup,
-  Input,
-  H1,
-  FnButton,
-} from "component/Styled";
+import AddrSearchPage from "./AddrSearchPage";
 
 export default function AccepterPage() {
   const { openPage, setPage } = usePage();

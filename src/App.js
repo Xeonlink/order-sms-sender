@@ -1,11 +1,10 @@
-import React from "react";
 import "App.css";
-import Home from "page/Home";
 import useGlobalState from "Hooks/useGlobalState";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import Home from "page/Home";
 import { ToastContainer, Zoom } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
 
 export default function App() {
   const [pages] = useGlobalState("pages", [<Home key={0} />]);
@@ -19,14 +18,12 @@ export default function App() {
         transition={Zoom}
         position="top-center"
         autoClose={2000}
-        // hideProgressBar
         newestOnTop={false}
         closeOnClick
         rtl={false}
         pauseOnFocusLoss
         draggable
         pauseOnHover
-        // closeButton={false}
       />
     </div>
   );
